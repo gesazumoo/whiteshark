@@ -23,9 +23,7 @@ export const defaultConfig = {
   },
   datasets: {
     line: {
-      fill: 'origin',
-      tension: 0.3,
-      borderColor: 'transparent',
+      borderColor: '#f87979',
     },
     bubble: {
       borderColor: 'transparent',

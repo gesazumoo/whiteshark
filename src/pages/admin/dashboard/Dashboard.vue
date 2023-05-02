@@ -1,14 +1,13 @@
 <template>
   <div class="dashboard">
+    <dashboard-info-block />
     <dashboard-charts />
 
-    <dashboard-info-block />
-
+    <MarkupTables />
     <div class="row row-equal">
       <div class="flex xs12 lg6">
         <dashboard-tabs @submit="addAddressToMap" />
       </div>
-
       <div class="flex xs12 lg6">
         <DashboardMap ref="dashboardMap" />
       </div>
@@ -23,6 +22,7 @@
   import DashboardInfoBlock from './DashboardInfoBlock.vue'
   import DashboardTabs from './DashboardTabs.vue'
   import DashboardMap from './DashboardMap.vue'
+  import MarkupTables from '../tables/markup-tables/MarkupTables.vue'
 
   const dashboardMap = ref()
 
